@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# work
+.test.py
+test.py
+.pretrained_models/
+pretrained_models/
