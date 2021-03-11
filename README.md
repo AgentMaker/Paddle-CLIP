@@ -13,10 +13,13 @@ model.set_dict(params)
 model.eval()
 
 image = transforms(Image.open("CLIP.png")).unsqueeze(0)
-text = tokenize(["a diagram"])
+text = tokenize(["a diagram", "a dog", "a cat"])
 
 with paddle.no_grad():
     logits_per_image, logits_per_text = model(image, text)
+    probs = paddle.nn.functional.softmax(logits_per_image, axis=-1)
+
+print(probs)
 ```
 
 ## Pretrained Models
