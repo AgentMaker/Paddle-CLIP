@@ -19,7 +19,13 @@ with paddle.no_grad():
 print(probs.numpy())
 ```
     [[0.9927937  0.00421065 0.00299568]]
-    
+
+## Requirements
+* wget
+* ftfy
+* regex
+* paddlepaddle(cpu/gpu)>=2.0.1
+
 ## Pretrained Models
 * [RN50](https://bj.bcebos.com/v1/ai-studio-online/6ffc89246e974a809e6e4b40fdb58063a112a0153e674dae8ed5b6dfe5d46d86?responseContentDisposition=attachment%3B%20filename%3DRN50.pdparams)
 * [RN50x4](https://bj.bcebos.com/v1/ai-studio-online/9f874e0174da48ffbd7c17e77b1fb278632620a9995e476ba873e334caec9037?responseContentDisposition=attachment%3B%20filename%3DRN50x4.pdparams)
