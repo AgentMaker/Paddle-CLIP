@@ -171,7 +171,7 @@ class ResidualAttentionBlock(nn.Layer):
 
     def attention(self, x):
         self.attn_mask = self.attn_mask if self.attn_mask is not None else None
-        return self.attn(x, x, x, attn_mask=self.attn_mask)[0]
+        return self.attn(x, x, x, attn_mask=self.attn_mask)
 
     def forward(self, x):
         x = x + self.attention(self.ln_1(x))
