@@ -3,9 +3,6 @@ import paddle.nn as nn
 from paddle.nn.initializer import Assign, Normal, Constant
 
 
-__all__ = ['CLIP', 'clip_rn50', 'clip_rn50x4', 'clip_rn101', 'clip_vit_b_32']
-
-
 class Identity(nn.Layer):
     def __init__(self):
         super(Identity, self).__init__()
@@ -405,63 +402,3 @@ class CLIP(nn.Layer):
 
         # shape = [global_batch_size, global_batch_size]
         return logits_per_image, logits_per_text
-
-
-def clip_rn50():
-    return CLIP(
-        embed_dim=1024,
-        image_resolution=224,
-        vision_layers=(3, 4, 6, 3),
-        vision_width=64,
-        vision_patch_size=None,
-        context_length=77,
-        vocab_size=49408,
-        transformer_width=512,
-        transformer_heads=8,
-        transformer_layers=12
-    )
-
-
-def clip_rn101():
-    return CLIP(
-        embed_dim=512,
-        image_resolution=224,
-        vision_layers=(3, 4, 23, 3),
-        vision_width=64,
-        vision_patch_size=None,
-        context_length=77,
-        vocab_size=49408,
-        transformer_width=512,
-        transformer_heads=8,
-        transformer_layers=12
-    )
-
-
-def clip_rn50x4():
-    return CLIP(
-        embed_dim=640,
-        image_resolution=288,
-        vision_layers=(4, 6, 10, 6),
-        vision_width=80,
-        vision_patch_size=None,
-        context_length=77,
-        vocab_size=49408,
-        transformer_width=640,
-        transformer_heads=10,
-        transformer_layers=12
-    )
-
-
-def clip_vit_b_32():
-    return CLIP(
-        embed_dim=512,
-        image_resolution=224,
-        vision_layers=12,
-        vision_width=768,
-        vision_patch_size=32,
-        context_length=77,
-        vocab_size=49408,
-        transformer_width=512,
-        transformer_heads=8,
-        transformer_layers=12
-    )
