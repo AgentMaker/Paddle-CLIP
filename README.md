@@ -19,9 +19,9 @@ with paddle.no_grad():
     logits_per_image, logits_per_text = model(image, text)
     probs = paddle.nn.functional.softmax(logits_per_image, axis=-1)
 
-print(probs)
+print(probs.numpy())
 ```
-
+    [[0.9927937  0.00421065 0.00299568]]
 ## Pretrained Models
 * [RN50](https://bj.bcebos.com/v1/ai-studio-online/6ffc89246e974a809e6e4b40fdb58063a112a0153e674dae8ed5b6dfe5d46d86?responseContentDisposition=attachment%3B%20filename%3DRN50.pdparams)
 * [RN50*4](https://bj.bcebos.com/v1/ai-studio-online/6ffc89246e974a809e6e4b40fdb58063a112a0153e674dae8ed5b6dfe5d46d86?responseContentDisposition=attachment%3B%20filename%3DRN50x4.pdparams)
