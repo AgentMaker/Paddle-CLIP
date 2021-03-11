@@ -1,5 +1,5 @@
 # CLIP_Paddle
-A PaddlePaddle version implementation of CLIP of OpenAI.
+A PaddlePaddle version implementation of CLIP of OpenAI.[【origin repo】](https://github.com/openai/CLIP/)
 
 ## Quick Start
 ```python
