@@ -2,7 +2,7 @@
 A PaddlePaddle version implementation of CLIP of OpenAI. [【origin repo】](https://github.com/openai/CLIP/)
 
 ## Install Package
-* Install by pip:
+* Install by pip：
 ```shell
 $ pip install paddleclip==1.0.0 -i https://pypi.python.org/pypi 
 ```
