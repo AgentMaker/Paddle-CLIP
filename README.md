@@ -1,5 +1,5 @@
-# CLIP_Paddle!
-[GitHub forks](https://img.shields.io/github/forks/AgentMaker/Paddle-CLIP)
+# CLIP_Paddle
+![GitHub forks](https://img.shields.io/github/forks/AgentMaker/Paddle-CLIP)
 ![GitHub Repo stars](https://img.shields.io/github/stars/AgentMaker/Paddle-CLIP)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/AgentMaker/Paddle-CLIP?include_prereleases)
 ![GitHub](https://img.shields.io/github/license/AgentMaker/Paddle-CLIP)  
