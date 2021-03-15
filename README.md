@@ -8,7 +8,7 @@ A PaddlePaddle version implementation of CLIP of OpenAI. [【origin repo】](htt
 ## Install Package
 * Install by pip：
 ```shell
-$ pip install paddleclip==1.0.0 -i https://pypi.python.org/pypi 
+$ pip install paddleclip
 ```
 * Install by wheel package：[【Releases Packages】](https://github.com/AgentMaker/Paddle-CLIP/releases)
 
